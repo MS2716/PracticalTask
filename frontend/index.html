@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Plan Manager</h1>
+    <div id="form-container">
+        <input type="text" id="planName" placeholder="Plan Name">
+        <input type="number" id="planPrice" placeholder="Plan Price">
+        <button onclick="createPlan()">Create Plan</button>
+    </div>
+    <div id="edit-container" style="display: none;">
+        <input type="text" id="editPlanName" placeholder="Edit Plan Name">
+        <input type="number" id="editPlanPrice" placeholder="Edit Plan Price">
+        <button onclick="updatePlan()">Update Plan</button>
+        <button onclick="cancelEdit()">Cancel</button>
+    </div>
+    <h2>All Plans</h2>
+    <ul id="planList"></ul>
+
+    <h2>Create Combo Plan</h2>
+    <div id="combo-form-container">
+        <input type="text" id="comboPlanName" placeholder="Combo Plan Name">
+        <input type="number" id="comboPlanPrice" placeholder="Combo Plan Price">
+        <select id="comboPlanOptions"></select>
+        <button onclick="createComboPlan()">Create Combo Plan</button>
+    </div>
+    <div id="edit-combo-container" style="display: none;">
+        <input type="text" id="editComboPlanName" placeholder="Edit Combo Plan Name">
+        <input type="number" id="editComboPlanPrice" placeholder="Edit Combo Plan Price">
+        <button onclick="updateComboPlan()">Update Combo Plan</button>
+        <button onclick="cancelEdit()">Cancel</button>
+    </div>
+    <h2>All Combo Plans</h2>
+    <ul id="comboPlanList"></ul>
+
+    <h2>Manage Eligibility Criteria</h2>
+    <div id="eligibility-criteria-form-container">
+        <input type="text" id="criteriaName" placeholder="Name">
+        <input type="number" id="ageLessThan" placeholder="Age Less Than">
+        <input type="number" id="ageGreaterThan" placeholder="Age Greater Than">
+        <input type="number" id="lastLoginDaysAgo" placeholder="Last Login Days Ago">
+        <input type="number" id="incomeLessThan" placeholder="Income Less Than">
+        <input type="number" id="incomeGreaterThan" placeholder="Income Greater Than">
+        <button onclick="createEligibilityCriteria()">Create Eligibility Criteria</button>
+        <button onclick="updateEligibilityCriteria()" style="display: none;">Update Eligibility Criteria</button>
+        <button onclick="cancelEdit()" style="display: none;">Cancel</button>
+    </div>
+    <h2>All Eligibility Criteria</h2>
+    <ul id="criteriaList"></ul>
+        
+
+    <script src="script.js"></script>
+</body>
+</html>

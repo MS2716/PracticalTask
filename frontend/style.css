@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#form-container {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#comboPlanOptions { 
+    display: block; 
+    margin: 10px 0;
+}
+
+/* General button styling */
+button {
+    margin: 2px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Align buttons in a line */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Style for plan and combo plan lists */
+#planList li, #comboPlanList li, #criteriaList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
